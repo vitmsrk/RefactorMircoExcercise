@@ -37,7 +37,7 @@ Write the unit tests for the TelemetryDiagnosticControls class, refactor the cod
 The responsibility of the TelemetryDiagnosticControls class is to establish a connection to the telemetry server (through the TelemetryClient), send a diagnostic request and successfully receive the response that contains the diagnostic info. The TelemetryClient class provided for the exercise simulates the behavior of the real TelemetryClient class, and can respond with either the diagnostic information or a random sequence. The real TelemetryClient class would connect and communicate with the telemetry server via tcp/ip.
 
 #### 5. **Refactor the entire solution architecture**:
-Follow the SOLID principals and refactor the entire code base and change the architecture as you see fit without losing functionality.
+Follow the SOLID principles and refactor the entire code base and change the architecture as you see fit without losing functionality.
 
 ## Original Exercise and possible solution
 
