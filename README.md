@@ -49,9 +49,7 @@ The original source can be found here: https://github.com/lucaminudel/TDDwithMoc
 Share your solutions via zip and or any other means of sharing.
 
 ## Some hints
-Ensure that your machine has visual studio (we used 2019), and the following 2 extensions: 1) Nuget 2) 'specflow for visual studio 2013' (or appropriate). These can be installed under menu tools, Extensions and updates.	
-
-Please ensure that you are familiar with our values in the instructions project (available in a separate file you are given). They are important to us!
+Please ensure that you are familiar with our values in the instructions project.  They are important to us.
 
 * simple, elegant code that reads like a narrative
 * thinking about the code more than the writing of the code (we spend a lot of time thinking/debating about what we are writing)
