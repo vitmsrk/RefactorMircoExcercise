@@ -6,6 +6,9 @@ You can count about 90 minutes per exercise: you can organize a 90 minutes imple
 ## Developers’ Instructions
 Complete any of the exercise of you choice. You must complete at least 1 exercies or do whichever amount you please. Please advise once delivering your result on which exercises were completed and duration taken to complete them.
 
+## Please include git history
+If the git history is not included it will impact the assesment negtively. 
+
 This could be code you just inherited from a legacy code-base. Now you want to write unit tests for it, and that is harder than it needs to be.
 
 For each exercise, there is only one class you are interested in writing tests for right now. As a first step, try to get some kind of test in place before you change the class at all. Identify why the class is hard to write tests for, and which SOLID principles are not being followed.
