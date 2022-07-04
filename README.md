@@ -6,9 +6,6 @@ You can count about 90 minutes per exercise: you can organize a 90 minutes imple
 ## Developers’ Instructions
 Complete any of the exercise of you choice. You must complete at least 1 exercies or do whichever amount you please. Please advise once delivering your result on which exercises were completed and duration taken to complete them.
 
-## Please include git history
-If the git history is not included it will impact the assesment negtively. 
-
 This could be code you just inherited from a legacy code-base. Now you want to write unit tests for it, and that is harder than it needs to be.
 
 For each exercise, there is only one class you are interested in writing tests for right now. As a first step, try to get some kind of test in place before you change the class at all. Identify why the class is hard to write tests for, and which SOLID principles are not being followed.
@@ -16,6 +13,9 @@ For each exercise, there is only one class you are interested in writing tests f
 When you have some kind of test to lean on, refactor the code and make it testable. Take care when refactoring not to alter the functionality, or change interfaces which other client code may rely on. Add more tests to cover the functionality of the particular class you've been asked to get under test.
 
 Apply the unit testing style and framework you are most comfortable with. You can choose to use stubs or mocks or none at all. If you do, you are free to use the mocking tool that you prefer.
+
+## Please include git history
+If the git history is not included it will impact the assesment negtively. 
 
 #### 1. **TirePressureMonitoringSystem exercise**:
 Write the unit tests for the Alarm class, refactor the code as much as you need to make the class testable.
