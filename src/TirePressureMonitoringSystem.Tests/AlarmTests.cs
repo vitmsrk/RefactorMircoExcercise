@@ -67,12 +67,27 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests
             // Assert
             Assert.IsTrue(alarm.AlarmOn);
         }
+        
+        [Test]
+        public void Check_CallsSensorExactlyOnce()
+        {
+            // Arrange
+            Mock<ISensor> sensorMock = SetupSensorMock(1.0);
+            var alarm = new Alarm(sensorMock.Object);
+
+            // Act
+            alarm.Check();
+            
+            // Assert
+            sensorMock.Verify(x => x.PopNextPressurePsiValue(), Times.Once);
+        }
 
         private Mock<ISensor> SetupSensorMock(double pressureValue)
         {
             var sensorMock = new Mock<ISensor>();
             sensorMock.Setup(x => x.PopNextPressurePsiValue())
-                .Returns(pressureValue);
+                .Returns(pressureValue)
+                .Verifiable();
 
             return sensorMock;
         }
