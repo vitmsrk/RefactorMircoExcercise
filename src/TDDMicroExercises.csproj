@@ -34,7 +34,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <HintPath>packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Moq, Version=4.10.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920">
+      <HintPath>packages\Moq.4.10.0\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>packages\System.ValueTuple.4.4.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web" />
     <Reference Include="nunit.framework">
       <HintPath>lib\nunit.framework.dll</HintPath>
@@ -47,6 +64,8 @@
     <Compile Include="TelemetrySystem\TelemetryDiagnosticControls.cs" />
     <Compile Include="TirePressureMonitoringSystem.Tests\AlarmTests.cs" />
     <Compile Include="TirePressureMonitoringSystem\Alarm.cs" />
+    <Compile Include="TirePressureMonitoringSystem\AlarmOptions.cs" />
+    <Compile Include="TirePressureMonitoringSystem\ISensor.cs" />
     <Compile Include="TirePressureMonitoringSystem\Sensor.cs" />
     <Compile Include="TurnTicketDispenser\TicketDispenser.cs" />
     <Compile Include="TurnTicketDispenser\TurnNumberSequence.cs" />
@@ -77,6 +96,7 @@
   <ItemGroup>
     <None Include="lib\nunit.framework.dll" />
     <None Include="lib\nunit.framework.xml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
