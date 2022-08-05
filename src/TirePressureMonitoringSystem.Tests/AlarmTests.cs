@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using System;
+using Moq;
 using NUnit.Framework;
 
 namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests
@@ -6,6 +7,12 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem.Tests
     [TestFixture]
     public class AlarmTests
     {
+        [Test]
+        public void Constructor_WhenCalledWithNullSensor_ThrowsArgumentNullException()
+        {
+            Assert.Throws<ArgumentNullException>(() => new Alarm(null));
+        }
+
         [Test]
         public void Check_DoesNotThrowAnyExceptions()
         {
