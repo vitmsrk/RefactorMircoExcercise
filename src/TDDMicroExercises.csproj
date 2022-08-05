@@ -45,6 +45,7 @@
     <Compile Include="TelemetrySystem\TelemetryClient.cs" />
     <Compile Include="TelemetrySystem.Tests\TelemetryDiagnosticControlsTest.cs" />
     <Compile Include="TelemetrySystem\TelemetryDiagnosticControls.cs" />
+    <Compile Include="TirePressureMonitoringSystem.Tests\AlarmTests.cs" />
     <Compile Include="TirePressureMonitoringSystem\Alarm.cs" />
     <Compile Include="TirePressureMonitoringSystem\Sensor.cs" />
     <Compile Include="TurnTicketDispenser\TicketDispenser.cs" />
