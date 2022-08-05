@@ -9,6 +9,8 @@ namespace TDDMicroExercises.TirePressureMonitoringSystem
 
         private bool _alarmOn = false;
 
+        [Obsolete("This constructor is obsolete and will be removed soon. " +
+            "Use the Alarm(ISensor sensor, Action<AlarmOptions> configureOptions = null) overload instead.")]
         public Alarm() : this(new Sensor())
         {
         }
